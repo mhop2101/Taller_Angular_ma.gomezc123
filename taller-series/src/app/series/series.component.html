@@ -1,0 +1,29 @@
+<div class="container mt-5">
+  <div class="row">
+    <div class="col-md-8">
+      <table class="table" class="my-table">
+        <thead class="table-light">
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Name</th>
+            <th scope="col">Channel</th>
+            <th scope="col">Seasons</th>
+          </tr>
+        </thead>
+        <tbody class="table-secondary" id="mytbody">
+
+          <tr *ngFor="let serie of series; let i = index">
+            <td scope="row">{{i+1}}</td>
+            <td>{{serie.name}}</td>
+            <td>{{serie.channel}}</td>
+            <td>{{serie.seasons}}</td>
+          </tr>
+
+
+        </tbody>
+      </table>
+      <p class="px-2">Seasons average: {{seriesavg}}</p>
+    </div>
+
+  </div>
+</div>
